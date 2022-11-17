@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include star_rides *.css
+recursive-include star_rides *.csv
+recursive-include star_rides *.html
+recursive-include star_rides *.ico
+recursive-include star_rides *.js
+recursive-include star_rides *.json
+recursive-include star_rides *.md
+recursive-include star_rides *.png
+recursive-include star_rides *.py
+recursive-include star_rides *.svg
+recursive-include star_rides *.txt
+recursive-exclude star_rides *.pyc
