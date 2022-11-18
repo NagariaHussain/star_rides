@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{make}-{model}-{####}",
  "creation": "2022-11-17 16:34:55.386806",
@@ -12,7 +13,10 @@
   "model",
   "column_break_3",
   "purchase_date",
-  "status"
+  "status",
+  "route",
+  "is_published",
+  "image"
  ],
  "fields": [
   {
@@ -43,11 +47,29 @@
   {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2022-11-17 16:40:56.097008",
+ "modified": "2022-11-18 11:51:13.695145",
  "modified_by": "Administrator",
  "module": "Star Rides",
  "name": "Vehicle",
@@ -67,6 +89,7 @@
    "write": 1
   }
  ],
+ "route": "vehicles",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
